@@ -23,19 +23,15 @@ public class PhoneNumberRule: Rule {
 
 	public func validate(value: String) -> Bool {
 		var isValid = false;
-		do {
-			let phoneNumber: NBPhoneNumber = try phoneUtil.parse(value, defaultRegion: countryCode.text)
-			let formattedString: String    = try phoneUtil.format(phoneNumber, numberFormat: NBEPhoneNumberFormatE164)
-
-			NSLog("[%@]", phoneNumber)
-			NSLog("[%@]", formattedString)
-			isValid = true
+		do{
+			let phoneNumber:NBPhoneNumber	= try phoneUtil.parse(value, defaultRegion: countryCode.text)
+			isValid							= phoneUtil.isValidNumberForRegion(phoneNumber, regionCode: countryCode.text)
 		}
 		catch let error as NSError {
 			print(error.localizedDescription)
 			isValid = false
 		}
-		print(isValid);
+
 		return isValid
 	}
 
