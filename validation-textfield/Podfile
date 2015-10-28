@@ -1,0 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+    pod 'SwiftValidator', '~> 3.0.0'
+    pod 'libPhoneNumber-iOS', '~> 0.8.8'

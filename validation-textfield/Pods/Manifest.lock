@@ -1,0 +1,13 @@
+PODS:
+  - libPhoneNumber-iOS (0.8.8)
+  - SwiftValidator (3.0.1)
+
+DEPENDENCIES:
+  - libPhoneNumber-iOS (~> 0.8.8)
+  - SwiftValidator (~> 3.0.0)
+
+SPEC CHECKSUMS:
+  libPhoneNumber-iOS: fe877b7c44c270a9da2082d3e2892d5316f6a2f9
+  SwiftValidator: c59223144754045d7691febdc3b3ecc2e73b609c
+
+COCOAPODS: 0.39.0
